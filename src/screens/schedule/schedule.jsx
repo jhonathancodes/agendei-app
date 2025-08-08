@@ -15,7 +15,7 @@ function Schedule(props) {
     const id_doctor = props.route.params.id_doctor;
     const id_service = props.route.params.id_service;
     const [selected, setSelect] = useState("");
-    const [selectedHour, setSelectedHour] = useState(""); // Estado para selectedHour
+    const [selectedHour, setSelectedHour] = useState(""); 
 
     async function ClickBooking() {
         try {
@@ -43,15 +43,15 @@ function Schedule(props) {
         <View style={styles.container}>
             <View>
                 <Calendar
-                    theme={styles.theme}  // Passando o tema para estilizar o calendário
-                    style={styles.calendar}  // Estilizando o contêiner do calendário
+                    theme={styles.theme}  
+                    style={styles.calendar}  
                     onDayPress={(day) => {
                         setSelect(day.dateString);
                     }}
                     markedDates={{
                         [selected]: { selected: true },
                     }}
-                    minDate={new Date().toISOString().split('T')[0]} // Corrigindo o formato de data
+                    minDate={new Date().toISOString().split('T')[0]} 
                 />
                 <View>
                     <Text style={styles.textHour}>Horário</Text>
@@ -60,7 +60,7 @@ function Schedule(props) {
                 <View>
                     <Picker selectedValue={selectedHour}
                         onValueChange={(itemValue, itemIndex) => {
-                            setSelectedHour(itemValue); // Corrigindo a nomeação da variável
+                            setSelectedHour(itemValue); 
                         }}>
                         <Picker.Item label="08:30" value="08:30" />
                         <Picker.Item label="09:00" value="09:00" />
