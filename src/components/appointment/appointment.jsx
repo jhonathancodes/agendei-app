@@ -4,7 +4,7 @@ import icon from "../../constants/icon.js";
 import Button from "../../components/button/button.jsx";
 
 function Appointment(props) {
-    // Garantindo que as strings de data e hora estejam corretas
+
     const dt = new Date(props.bookingDate + "T" + props.bookingHour);
     
     return (
