@@ -1,4 +1,4 @@
-import React, { useState } from "react";  // Adicionando a importação do React
+import React, { useState } from "react"; 
 import { FlatList, View, Alert } from "react-native";
 import { styles } from "./abacalendar.style.js";
 import Appointment from "../../components/appointment/appointment.jsx";
