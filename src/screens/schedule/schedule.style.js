@@ -12,20 +12,20 @@ export const styles = {
     calendar: {
         borderRadius: 10,
         marginTop: 20,
-        elevation: 3, // Se for Android, isso adiciona uma sombra
+        elevation: 3, 
     },
     theme: {
-        todayTextColor: COLORS.red,               // Cor do texto de hoje
-        selectedDayBackgroundColor: COLORS.blue,  // Cor de fundo do dia selecionado
-        selectedDayTextColor: COLORS.white,       // Cor do texto do dia selecionado
-        arrowColor: COLORS.blue,                  // Cor das setas de navegação
-        monthTextColor: COLORS.gray1,             // Cor do texto do mês
-        dayTextColor: COLORS.gray3,               // Cor do texto dos dias
-        textDayFontSize: FONT_SIZE.md,            // Tamanho da fonte dos dias
-        textMonthFontSize: FONT_SIZE.lg,          // Tamanho da fonte do mês
-        textDayHeaderFontSize: FONT_SIZE.sm,      // Tamanho da fonte do cabeçalho dos dias
-        todayBackgroundColor: COLORS.white,       // Cor de fundo de "Hoje"
-        todayTextColor: COLORS.red,               // Cor do texto de "Hoje"
+        todayTextColor: COLORS.red,              
+        selectedDayBackgroundColor: COLORS.blue, 
+        selectedDayTextColor: COLORS.white,       
+        arrowColor: COLORS.blue,                 
+        monthTextColor: COLORS.gray1,             
+        dayTextColor: COLORS.gray3,              
+        textDayFontSize: FONT_SIZE.md,            
+        textMonthFontSize: FONT_SIZE.lg,          
+        textDayHeaderFontSize: FONT_SIZE.sm,      
+        todayBackgroundColor: COLORS.white,      
+        todayTextColor: COLORS.red,              
     },
 
     textHour: {
