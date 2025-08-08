@@ -25,14 +25,14 @@ function Account(props){
 
         } catch (error) {
 
-            // Verificar se o erro contém uma mensagem de erro específica
+            
             if (error.response?.data.error) {
-                Alert.alert(error.response.data.error);  // Mensagem do erro que vem da API
+                Alert.alert(error.response.data.error); 
             } else {
-                // Se não houver um erro específico, exibe uma mensagem genérica
+                
                 Alert.alert("Ocorreu um erro. Tente novamente mais tarde.");
             }
-            console.error(error);  // Log para ajudar no debug
+            console.error(error); 
         }
 
     }
