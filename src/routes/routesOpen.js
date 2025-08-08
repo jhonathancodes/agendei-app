@@ -1,5 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from "../screens/login/login.jsx"; // Remova o ponto extra
+import Login from "../screens/login/login.jsx";
 import Account from "../screens/account/account.jsx";
 
 const Stack = createNativeStackNavigator();
