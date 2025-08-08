@@ -7,12 +7,11 @@ import { useEffect, useState } from "react";
 
 function Services(props) {
 
-    const { id_doctor, name, icone, doctors } = props.route.params;  // Agora você tem os médicos disponíveis aqui
-
-    // Encontrar o médico usando o id_doctor
-    const doctor = doctors.find(doc => doc.id_doctor === id_doctor);  // Procurando o médico na lista de doctors
-
-    // Verifica o gênero para renderizar o ícone correto
+    const { id_doctor, name, icone, doctors } = props.route.params;  
+    
+    
+    const doctor = doctors.find(doc => doc.id_doctor === id_doctor); 
+    
     const doctorIcon = doctor && doctor.gender === 'female' ? icon.female : icon.male;
 
     const [doctorsServices, SetDoctorServices] = useState([]);
@@ -49,7 +48,7 @@ function Services(props) {
     return (
         <View style={styles.container}>
             <View style={styles.banner}>
-                {/* Renderiza o ícone correto com base no gênero do médico */}
+               
                 <Image source={doctorIcon} style={styles.icon} />
                 <Text style={styles.name}>{name}</Text>
             </View>
