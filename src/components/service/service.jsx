@@ -6,7 +6,7 @@ function Service(props) {
     return (
         <View style={styles.service}>
             <View style={styles.containerText}>
-                <Text style={styles.description}>{props.description}</Text> {/* Corrigido para 'description' */}
+                <Text style={styles.description}>{props.description}</Text> 
             </View>
 
             <View style={styles.containerButton}>
